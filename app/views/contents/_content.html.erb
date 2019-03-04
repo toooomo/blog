@@ -1,0 +1,7 @@
+  <div class="card">
+  <%= simple_format(content.text) %>
+<% if user_signed_in? && current_user.id == content.user_id %>
+  <%= link_to 'EDIT', "/contents/#{content.id}/edit", method: :get, class: "btn amber lighten-3 hoverable" %>
+  <%= link_to 'DESTROY', "/contents/#{content.id}", method: :delete, class: "btn amber lighten-3 hoverable" %>
+<% end %>
+</div>

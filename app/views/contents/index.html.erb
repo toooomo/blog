@@ -1,0 +1,6 @@
+<div class="contents row">
+<% @contents.each do |content| %>
+  <%= render partial: "content", locals: {content: content} %>
+<% end %>
+</div>
+<script type="text/javascript" src="application.js"></script>

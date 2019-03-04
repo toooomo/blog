@@ -1,0 +1,8 @@
+<div class="contents row">
+  <div class="card hoverable">
+
+<%= simple_format(@content.text) %>
+</div>
+<%= link_to 'DESTROY', "/contents/#{@content.id}", method: :delete, class: "btn amber lighten-3" %>
+</div>
+<script type="text/javascript" src="application.js"></script>

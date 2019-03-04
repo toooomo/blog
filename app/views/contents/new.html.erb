@@ -1,0 +1,13 @@
+<div class="contents row">
+<div class="col s12 card">
+    <%= form_for @content do |f| %>
+  <div class="input-field col s12 ">
+    <%= f.text_area :text, placeholder: "本文"%>
+  </div>
+
+    <div class="submit">
+      <%= f.submit "送信", class: "btn amber lighten-3" %>
+  </div>
+  <% end %>
+</div>
+</div>
